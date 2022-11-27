@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="players-container">
+      <div id="player">
+        <img src="assets/cross.png" id="player-image">
+        <p id="player-score">0</p>
+      </div>
+      <div id="player">
+        <img src="assets/circle.png" id="player-image">
+        <p id="player-score">0</p>
+      </div>
+    </div>
+    <div id="row-container">
+      <div onclick='AddSymbol(0, 0)' id="cell"></div>
+      <div onclick='AddSymbol(0, 1)' style="border-left: 6px solid #BBADA0;border-right: 6px solid #BBADA0;" id="cell">
+      </div>
+      <div onclick='AddSymbol(0, 2)' id="cell"></div>
+    </div>
+    <div style="border-top: 6px solid #BBADA0;border-bottom: 6px solid #BBADA0;" id="row-container">
+      <div onclick='AddSymbol(1, 0)' id="cell"></div>
+      <div onclick='AddSymbol(1, 1)' style="border-left: 6px solid #BBADA0;border-right: 6px solid #BBADA0;" id="cell">
+      </div>
+      <div onclick='AddSymbol(1, 2)' id="cell"></div>
+    </div>
+    <div id="row-container">
+      <div onclick='AddSymbol(2, 0)' id="cell"></div>
+      <div onclick='AddSymbol(2, 1)' style="border-left: 6px solid #BBADA0;border-right: 6px solid #BBADA0;" id="cell">
+      </div>
+      <div onclick='AddSymbol(2, 2)' id="cell"></div>
+    </div>
+
+    <p id="log-label"></p>
+    <div onclick='ResetBoard()' id="play-again-button">Restart</div>
+  </div>
+</body>
+
+</html>

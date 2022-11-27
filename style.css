@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background-color: #FAF8EF;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#cell:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+#row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#play-again-button {
+  margin: 30px;
+  padding: 10px 30px;
+  background: #8F7A66;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#play-again-button:hover {
+  background: #A58C77;
+}
+
+#log-label {
+  color: #8F7A66;
+}
+
+#players-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#player {
+  width: 125px;
+  background: #BBADA0;
+  border-radius: 10px;
+  margin: 0 10px;
+  margin-bottom: 40px;
+  padding: 10px;
+  display: flex;
+  height: 30px;
+}
+
+#player-image {
+  height: 25px;
+  margin-right: 10px;
+}
+
+#player-score {
+  color: white;
+  margin-top: 2px;
+  width: 100%;
+  text-align: center;
+}
